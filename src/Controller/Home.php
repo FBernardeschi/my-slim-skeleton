@@ -15,12 +15,10 @@ class Home
         $this->container = $container;
     }
 
-    function index(ServerRequestInterface $request, ResponseInterface $response) {
-        $title = 'It`s work!';
+    function index(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface {
+        $title = 'Slim 4 Skeleton';
         $view = $this->container->get('view');
         $response = $view->render($response, 'index.html', compact('title'));
-
-        // $response->getBody()->write('Hello from index controller');
 
         return $response;
     }
