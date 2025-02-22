@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/FBernardeschi/my-slim-skeleton
-composer instal
+composer install
 ```
 
 ### RU. Version
